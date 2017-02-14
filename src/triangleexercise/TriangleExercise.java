@@ -29,6 +29,9 @@ public class TriangleExercise {
     public static String defineTriangle(int a, int b, int c){
       
         String result = "ingen ens sider";
+        if(a<=0||b<=0||c<=0){
+            result = "Det kan ikke danne en trekant";
+        }
         if(a == b && a == c){
             result = "Ligesidet";
         }
